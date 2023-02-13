@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint"
   },
   "dependencies": {
+    "@leap-ai/sdk": "0.0.109",
     "@next/font": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
