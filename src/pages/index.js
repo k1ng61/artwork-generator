@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import {useState} from 'react'
-import buildspaceLogo from '../assets/buildspace-logo.png'
+import buildspaceLogo from '../../public/buildspace-logo.png'
 
 
 
@@ -75,7 +75,7 @@ const getInference = async (inferenceid) => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Generate Art in seconds</h1>
+            <h1>Generate your own Dystopian artwork in seconds.</h1>
           </div>
           <div className="header-subtitle">
             <h2>Artwork inspired by Greg rutkowski and Hubert Robert</h2>
@@ -113,8 +113,8 @@ const getInference = async (inferenceid) => {
           rel="noreferrer"
         >
           <div className="badge">
-            <img  src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <Image  src={buildspaceLogo} alt="buildspace logo" />
+            <p>built by Kapil @ Buildspace</p>
           </div>
         </a>
       </div>
